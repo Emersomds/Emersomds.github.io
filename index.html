@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia de Textos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fonte do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Seção de entrada de texto -->
+        <div class="input-section">
+            <img src="img/cryptography.png" alt="Logo" class="logo">
+            <h1>Criptografe suas mensagens</h1>
+            <textarea class="input-section-text" id="inputText" placeholder="Digite seu texto aqui"></textarea>
+            <div class="info-container">
+                <img src="img/Group.png" alt="Exclamação" class="info-icon">
+                <p class="info-text">Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="buttons">
+                <button class="btn criptografar" onclick="criptografar()">Criptografar</button>
+                <button class="btn descriptografar" onclick="descriptografar()">Descriptografar</button>
+            </div>
+        </div>
+        <!-- Seção de saída de texto -->
+        <div class="output-section">
+            <img id="placeholderImage" src="img/High quality products 1 1.png" alt="Placeholder Image">
+            <p id="outputMessage" class="output-message"  ><strong>Mensagem descriptografada</strong><br>
+                Aqui aparecerá o texto descriptografado.<!-- Mensagem inicial de saída (descriptografada) -->
+            </p>
+            <textarea id="outputText" readonly style="display:none;"></textarea>
+            <button id="copyButton" class="btn copy-button" onclick="copiarTexto()" style="display:none;">Copiar</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script><!-- Script JavaScript -->
+</body>
+</html>

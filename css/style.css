@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* Importando fonte Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f9fc;
+}
+
+.container {
+    display: flex;
+    gap: 48px;
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+.input-section{
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+
+.output-section{
+    width: 400px;
+    height: 800px;
+}
+
+/* Estilos para o logo */
+.logo {
+    width: 50px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Estilos para o título */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #0A3871;
+}
+
+/* Estilos para a área de texto de entrada */
+.input-section-text {
+    width: 680px;
+    height: 48px;
+    font-family: "inter", sans-serif;
+    font-weight:400;
+    font-size: 32px;
+    padding: 10px;
+    line-height: 48px;
+    border-radius: 5px;
+    background-color: #f7f9fc;
+    border: none;
+}
+
+/* Estilos para o container de informações */
+.info-container {
+    margin-top: 600px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Estilos para o ícone de informação */
+.info-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+/* Estilos para o texto informativo */
+.info-text {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Estilos para o container de botões */
+.buttons {
+    display: flex;
+    gap: 8px;
+}
+
+/* Estilos para botões gerais */
+.btn {
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilos para o botão Criptografar */
+.criptografar {
+    background-color: #0A3871;
+    color: white;
+}
+
+.criptografar:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para o botão Descriptografar */
+.descriptografar {
+    background-color: #007bff;
+    color: white;
+}
+
+.descriptografar:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para o botão de cópia */
+.copy-button {
+    margin-top: 10px;
+    background-color: #28a745;
+    color: white;
+}
+
+.copy-button:hover {
+    background-color: #218838;
+}
+
+/* Estilos para a seção de saída */
+.output-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Estilos para a mensagem de saída */
+#outputMessage {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
+    display: block; /* Deve estar visível inicialmente */
+}
+
+/* Estilos para a imagem de placeholder */
+img#placeholderImage {
+    width: 336px;
+    height: 304px;
+    margin-bottom: 20px;
+}
+
+textarea#outputText {
+    width: 336px;
+    height: 800px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: none; /* Deve estar oculta inicialmente */
+}
