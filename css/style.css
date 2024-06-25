@@ -61,6 +61,7 @@ h1 {
     font-family: "inter", sans-serif;
     font-weight:400;
     font-size: 32px;
+    color: #0A3871;
     padding: 10px;
     line-height: 48px;
     border-radius: 5px;
@@ -169,6 +170,9 @@ textarea#outputText {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
-    font-size: 16px;
+    font-family: "inter", sans-serif;
+    font-weight:400;
+    font-size: 32px;
+    color: #0A3871;
     display: none; /* Deve estar oculta inicialmente */
 }
