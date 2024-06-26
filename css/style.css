@@ -234,11 +234,14 @@ textarea#outputText {
         margin: 10px;
     }
 
-    .input-section-text, textarea#outputText {
+    .input-section-text {
         width: 80%;
-       
         font-size: 18px;
         left: 10px;
+    }
+
+    textarea#outputText{
+        width: 100%;
     }
 
     img#placeholderImage {
