@@ -236,6 +236,7 @@ textarea#outputText {
 
     .input-section-text, textarea#outputText {
         width: 80%;
+        height: 900px;
         font-size: 18px;
         left: 10px;
     }
