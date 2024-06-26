@@ -13,7 +13,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f7f9fc;
+    background-image: radial-gradient(circle, #6fb7c6, #73bdcc, #77c2d2, #7cc8d9, #80cedf, #87d2e0, #8ed5e2, #95d9e3, #a0dbe1, #acdddf, #b6dede, #c1e0de);
 }
 
 .container {
@@ -65,8 +65,9 @@ h1 {
     padding: 10px;
     line-height: 48px;
     border-radius: 5px;
-    background-color: #f7f9fc;
+    background-color:#6fb7c600;
     border: none;
+    outline: none;
 }
 
 /* Estilos para o container de informações */
@@ -166,14 +167,16 @@ img#placeholderImage {
 
 textarea#outputText {
     width: 336px;
-    height: 800px;
-    margin-bottom: 10px;
+    height: 781px;
+    margin-top: 72px;
     padding: 10px;
-    border-radius: 5px;
+    line-height: 36px;
     font-family: "inter", sans-serif;
     font-weight:400;
-    font-size: 32px;
-    color: #0A3871;
+    font-size: 24px;
+    color: #495057;
+    outline: none;
+    border: none;
     display: none; /* Deve estar oculta inicialmente */
 }
 
