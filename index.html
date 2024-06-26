@@ -30,8 +30,10 @@
             <p id="outputMessage" class="output-message"  ><strong>Mensagem descriptografada</strong><br>
                 Aqui aparecerá o texto descriptografado.<!-- Mensagem inicial de saída (descriptografada) -->
             </p>
-            <textarea id="outputText" readonly style="display:none;"></textarea>
-            <button id="copyButton" class="btn copy-button" onclick="copiarTexto()" style="display:none;">Copiar</button>
+            <div class="textarea-container">
+                <textarea id="outputText" readonly style="display:none;"></textarea>
+                <button id="copyButton" class="btn copy-button" onclick="copiarTexto()" style="display:none;">Copiar</button>
+            </div>
         </div>
     </div>
     <script src="js/script.js"></script><!-- Script JavaScript -->
