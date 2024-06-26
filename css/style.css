@@ -7,7 +7,7 @@
 
 /* Estilos gerais */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'inter', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,6 +41,7 @@ body {
 
 /* Estilos para o logo */
 .logo {
+    margin-top: 20px;
     width: 50px;
     height: auto;
     margin-bottom: 20px;
@@ -48,7 +49,7 @@ body {
 
 /* Estilos para o título */
 h1 {
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 20px;
     color: #0A3871;
 }
@@ -114,6 +115,8 @@ h1 {
 .criptografar {
     background-color: #0A3871;
     color: white;
+    font-size: 24px;
+    font-family: 'inter', sans-serif;
 }
 
 .criptografar:hover {
@@ -124,6 +127,8 @@ h1 {
 .descriptografar {
     background-color: #007bff;
     color: white;
+    font-size: 24px;
+    font-family: 'inter', sans-serif;
 }
 
 .descriptografar:hover {
@@ -132,15 +137,19 @@ h1 {
 
 /* Estilos para o botão de cópia */
 .copy-button {
-    background-color: #28a745;
+    background-color: blue;
     color: white;
     position: absolute;
+    font-size: 24px;
+    font-family: 'inter', sans-serif;
     top: 885px;
     right: 12%;
 }
 
 .copy-button:hover {
-    background-color: #218838;
+    background-color: blue; /* For browsers that do not support gradients */
+  background-image: repeating-conic-gradient(blue 10%, white 20%);
+  border-radius: 12%;
 }
 
 /* Estilos para a seção de saída */
@@ -154,11 +163,15 @@ h1 {
 
 /* Estilos para a mensagem de saída */
 #outputMessage {
-    font-size: 16px;
-    color: #666;
+    font-size: 24px;
+    color: #343A40;
     text-align: center;
     margin-top: 20px;
     display: block; /* Deve estar visível inicialmente */
+}
+
+#outputMessage strong{
+    font-weight: 700;
 }
 
 /* Estilos para a imagem de placeholder */
@@ -188,69 +201,4 @@ textarea#outputText {
     outline: none;
     border: none;
     display: none; /* Deve estar oculta inicialmente */
-}
-
-/* Estilos para dispositivos móveis */
-/* Estilos para dispositivos móveis */
-@media (max-width: 768px) {
-    body {
-        flex-direction: column;
-        justify-content: flex-start;
-        height: auto;
-    }
-
-    .container {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding: 10px;
-    }
-
-    .input-section {
-        width: 100%;
-        order: 1;
-        padding: 10px;
-    }
-
-    .buttons {
-        flex-direction: column;
-        width: 90%;
-        margin-left: 5px;
-        order: 2;
-        margin: 10px 0;
-    }
-
-    .btn {
-        width: 90%;
-        align-items:center;
-        height: 50px; /* Altura ajustada para dispositivos móveis */
-    }
-
-    .copy-button{
-        width: 90%;
-    }
-
-    .output-section {
-        width: 100%;
-        order: 3;
-        padding: 10px;
-        align-items: center;
-    }
-
-    .input-section-text {
-        width: 100%;
-        height: 100px;
-        font-size: 18px;
-    }
-
-    textarea#outputText{
-    width: 400px;
-    height: 600px;
-    
-    }
-
-    img#placeholderImage {
-        width: 100%;
-        height: auto;
-    }
 }
